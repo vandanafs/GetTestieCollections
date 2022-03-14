@@ -10,6 +10,7 @@ public class Address {
      * Construct an Address without country
      */
     public Address(String street, String town, String postCode) {
+
         this(street, town, postCode, "");
     }
 
