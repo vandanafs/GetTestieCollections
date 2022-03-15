@@ -63,4 +63,19 @@ public class Person {
     {
         return "Name: " + name + "\n" + "Year of birth: " + yearOfBirth + "\n";
     }
+
+    @Override
+    public int hashCode () {
+        return (43+777);
+    }
+
+    @Override
+    public boolean equals ( Object obj ) {
+        Person obj1=(Person) obj;
+
+        boolean b = this.name.equals(obj1.name) &&
+            this.yearOfBirth==(obj1.yearOfBirth) &&
+            this.hashCode() == obj1.hashCode();
+        return b;
+    }
 }
